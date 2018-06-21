@@ -3,9 +3,6 @@
 def line(katz_deli)
   if katz_deli.size > 1
     line_status = "The line is currently:"
-    #katz_deli.each do |person|
-    #  print " #{katz_deli.index(person) + 1}. #{person}"
-    #end
     katz_deli.each_with_index { |person, index|
     line_status += " #{index + 1}. #{person}"
     }
@@ -27,5 +24,3 @@ def now_serving(katz_deli)
     puts "There is nobody waiting to be served!"
   end
 end
-
-line(["sam", "jake", "john"])
