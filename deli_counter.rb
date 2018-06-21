@@ -12,5 +12,10 @@ end
 
 def take_a_number(katz_deli, name)
   katz_deli << name
-  puts ""
+  puts "You are number #{katz_deli.size} in line."
+end
+
+def now_serving(katz_deli)
+  if katz_deli.size > 1
+    puts "Currently serving #{katz_deli.shift}."
 end
