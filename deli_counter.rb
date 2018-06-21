@@ -2,7 +2,7 @@
 
 def line(katz_deli)
   if katz_deli.size > 1
-    print "The line is currently:"
+    puts "The line is currently:"
     katz_deli.each do |person|
       print " #{katz_deli.index(person) + 1}. #{person}"
     end
